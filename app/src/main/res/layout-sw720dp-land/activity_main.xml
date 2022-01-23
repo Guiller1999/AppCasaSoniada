@@ -21,44 +21,43 @@
 
             <ImageView
                 android:id="@+id/imgLogo"
-                android:layout_width="51dp"
-                android:layout_height="38dp"
+                android:layout_width="123dp"
+                android:layout_height="73dp"
                 android:src="@drawable/real_estate2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.283"
+                app:layout_constraintHorizontal_bias="0.355"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.007" />
+                app:layout_constraintVertical_bias="0.008" />
 
             <TextView
                 android:id="@+id/txtTitulo"
                 android:layout_width="wrap_content"
-                android:layout_height="44dp"
+                android:layout_height="wrap_content"
                 android:fontFamily="cursive"
                 android:text="Casa Soñada"
                 android:textAlignment="center"
-                android:textSize="32sp"
+                android:textSize="60sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imgLogo"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.008" />
+                app:layout_constraintVertical_bias="0.007" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_datos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:orientation="vertical"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="60dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
             ></androidx.recyclerview.widget.RecyclerView>
-
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
