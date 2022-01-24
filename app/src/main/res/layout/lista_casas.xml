@@ -34,9 +34,12 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center_vertical">>
+            android:layout_gravity="center_vertical"
+            android:background="@color/cafe_latte"
+            >
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
@@ -51,64 +54,68 @@
                 app:layout_constraintVertical_bias="0.0">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/cafe_latte_palido"
                     android:orientation="vertical"
                     android:padding="7dp">
 
                     <TextView
+                        style="@style/title_card_description"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:text="Tipo de Casa"
                         android:textAlignment="center"
-                        style="@style/title_card_description"/>
+                        android:textSize="13sp" />
 
                     <TextView
                         android:id="@+id/txt_casa"
+                        style="@style/description_cardview"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:text="Casa Primaveral"
-                        style="@style/description_cardview"/>
+                        android:textSize="11sp" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:padding="7dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="4dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.493"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cardView3"
+                app:layout_constraintStart_toEndOf="@+id/cardView5"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/cafe_latte_palido"
                     android:orientation="vertical"
                     android:padding="7dp">
 
                     <TextView
+                        style="@style/title_card_description"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:text="Habitaciones"
                         android:textAlignment="center"
-                        style="@style/title_card_description"/>
+                        android:textSize="13sp" />
 
                     <TextView
                         android:id="@+id/txt_habitaciones"
+                        style="@style/description_cardview"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:text="5"
-                        style="@style/description_cardview"/>
-
+                        android:textSize="11sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -129,34 +136,33 @@
                 app:layout_constraintVertical_bias="0.0">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="7dp">
+                    android:padding="7dp"
+                    android:background="@color/cafe_latte_palido"
+                    >
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Área (m2)"
                         style="@style/title_card_description"
-                         />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Área (m2)"
+                        android:textSize="13sp" />
 
                     <TextView
                         android:id="@+id/txt_area"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Cerámica"
                         style="@style/description_cardview"
-                         />
-
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cerámica"
+                        android:textSize="11sp" />
                 </LinearLayout>
-
-
             </androidx.cardview.widget.CardView>
 
             <Button
                 android:id="@+id/btn_proforma"
-                style="@style/rounded_button_blue"
+                style="@style/rounded_button_black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -165,7 +171,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>

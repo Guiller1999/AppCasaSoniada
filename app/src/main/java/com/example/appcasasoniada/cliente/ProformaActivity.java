@@ -20,7 +20,7 @@ public class ProformaActivity extends BaseActivity {
 
     private TextView txtCasa, txtHabitaciones, txtArea, txtTotal;
     private ImageView imgCasa;
-    private boolean logueado;
+    private String logueado;
     private Group groupVisible, groupInvisible;
     private Casa casa;
 
@@ -30,7 +30,7 @@ public class ProformaActivity extends BaseActivity {
         setContentView(R.layout.activity_proforma);
 
         SharedPreferences datos = getSharedPreferences("datos", MODE_PRIVATE);
-        logueado = datos.getBoolean("logeado", false);
+        logueado = datos.getString("usuario_rol", null);
 
         casa = (Casa)getIntent().getSerializableExtra("casa");
         txtCasa = findViewById(R.id.txt_casa);
@@ -40,12 +40,11 @@ public class ProformaActivity extends BaseActivity {
         txtTotal = findViewById(R.id.txt_total);
 
         txtCasa.setText(casa.getNombre());
-        //imgCasa.setImageResource(casa.getImagen());
         imgCasa.setBackgroundResource(casa.getImagen());
         txtHabitaciones.setText(casa.getTotalHabitaciones() + " Habitaciones");
         txtArea.setText(casa.getTotalArea() + "m2");
 
-        if(logueado == false) {
+        if(logueado != null) {
             groupInvisible = findViewById(R.id.vista_no_login);
             groupVisible = findViewById(R.id.vista_login);
 
@@ -90,7 +89,5 @@ public class ProformaActivity extends BaseActivity {
                     txtTotal.setText("Total: $" + (totalBase - 1500.00));
                 break;
         }
-        System.out.println(checked);
-
     }
 }

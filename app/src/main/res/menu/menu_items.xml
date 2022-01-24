@@ -23,6 +23,23 @@
     </group>
 
     <group
+        android:id="@+id/menu_cliente"
+        android:visible="false">
+
+        <item
+            android:id="@+id/home"
+            android:title="Inicio"
+            android:icon="@drawable/ic_baseline_info_24"
+            tools:ignore="DuplicateIds" />
+
+        <item
+            android:id="@+id/salir"
+            android:title="Cerrar sesiòn"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            tools:ignore="DuplicateIds" />
+    </group>
+
+    <group
         android:id="@+id/menu_login"
         android:visible="false">
         <item
@@ -40,6 +57,6 @@
             android:id="@+id/salir"
             android:title="Cerrar sesiòn"
             android:icon="@drawable/ic_baseline_exit_to_app_24"
-            />
+            tools:ignore="DuplicateIds" />
     </group>
 </menu>

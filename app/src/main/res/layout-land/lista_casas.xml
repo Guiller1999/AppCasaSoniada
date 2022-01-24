@@ -36,7 +36,9 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center_vertical">>
+            android:layout_gravity="center_vertical"
+            android:background="@color/cafe_latte"
+            >>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView4"
@@ -57,7 +59,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="7dp">
+                    android:padding="7dp"
+                    android:background="@color/cafe_latte_palido"
+                    >
 
                     <TextView
                         style="@style/title_card_description"
@@ -96,7 +100,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="7dp">
+                    android:padding="7dp"
+                    android:background="@color/cafe_latte_palido">
 
                     <TextView
                         style="@style/title_card_description"
@@ -137,7 +142,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="7dp">
+                    android:padding="7dp"
+                    android:background="@color/cafe_latte_palido">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -160,7 +166,7 @@
 
             <Button
                 android:id="@+id/btn_proforma"
-                style="@style/rounded_button_blue"
+                style="@style/rounded_button_black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"

@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.AppCasaSoniada" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#41729F</item>
+        <item name="colorPrimary">@color/black_20</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -11,8 +11,9 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="textAppearanceCaption">@color/dark_blue</item>
-        <item name="android:statusBarColor" tools:targetApi="l">#41729F</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black_20</item>
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/merriweather</item>
     </style>
 
     <style name="Theme.AppCasaSoniada.NoActionBar">
@@ -25,22 +26,22 @@
     <style name="Theme.AppCasaSoniada.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <!-- Estilos propios -->
-    <style name="rounded_button_blue">
+    <style name="rounded_button_black">
         <item name="android:background">@drawable/effect_rounded_button</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/gold</item>
     </style>
 
     <style name="title_card_description">
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#676FA3</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textAlignment">center</item>
     </style>
 
     <style name="description_cardview">
         <item name="android:textAlignment">center</item>
-        <item name="android:textSize">10sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="Theme.App" parent="Theme.MaterialComponents">

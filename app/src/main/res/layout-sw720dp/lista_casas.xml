@@ -36,7 +36,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center_vertical">>
+            android:layout_gravity="center_vertical"
+            android:background="@color/cafe_latte">>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
@@ -57,7 +58,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:background="@color/cafe_latte_palido">
 
                     <TextView
                         style="@style/title_card_description"
@@ -75,7 +77,6 @@
                         android:text="Casa Primaveral"
                         android:textSize="20sp" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -97,7 +98,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:background="@color/cafe_latte_palido">
 
                     <TextView
                         style="@style/title_card_description"
@@ -114,7 +116,6 @@
                         android:layout_height="wrap_content"
                         android:text="5"
                         android:textSize="20sp" />
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -138,6 +139,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="10dp"
+                    android:background="@color/cafe_latte_palido"
                     >
 
                     <TextView
@@ -154,13 +156,12 @@
                         android:text="Cerámica"
                         style="@style/description_cardview"
                         android:textSize="20sp" />
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <Button
                 android:id="@+id/btn_proforma"
-                style="@style/rounded_button_blue"
+                style="@style/rounded_button_black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
