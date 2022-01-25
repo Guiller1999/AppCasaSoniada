@@ -1,14 +1,8 @@
 package com.example.appcasasoniada;
 
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.appcasasoniada.cliente.ListaCasaAdapter;
 import com.example.appcasasoniada.common.BaseActivity;
 import com.example.appcasasoniada.modelos.Casa;
@@ -43,7 +37,6 @@ public class MainActivity extends BaseActivity {
                 16000, R.drawable.casa3));
         lista.add(new Casa(4, "Casa Primavera", 4, 140,
                 23000, R.drawable.casa4));
-
         return lista;
     }
 

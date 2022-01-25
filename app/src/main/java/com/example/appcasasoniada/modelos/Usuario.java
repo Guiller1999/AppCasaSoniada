@@ -13,14 +13,17 @@ public class Usuario {
     private Date fecha_inicio_sesion;
     private TipoUsuario tipoUsuario;
 
-    public Usuario(int id, String nombre, String apellidos, String email, String password, TipoUsuario tipoUsuario) {
+
+    public Usuario(int id, String nombre, String apellidos,String telefono, String email, String password, TipoUsuario tipoUsuario) {
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.email = email;
+        this.telefono = telefono;
         this.password = password;
         this.tipoUsuario = tipoUsuario;
     }
+
 
     public int getId() {
         return id;
@@ -28,6 +31,10 @@ public class Usuario {
 
     public String getNombre() {
         return nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
     }
 
     public String getApellidos() {

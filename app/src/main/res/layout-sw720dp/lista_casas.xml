@@ -70,7 +70,7 @@
                         android:textSize="22sp" />
 
                     <TextView
-                        android:id="@+id/txt_casa"
+                        android:id="@+id/txt_telefono_c"
                         style="@style/description_cardview"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
             </androidx.cardview.widget.CardView>
 
             <Button
-                android:id="@+id/btn_proforma"
+                android:id="@+id/btn_ver_mas"
                 style="@style/rounded_button_black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

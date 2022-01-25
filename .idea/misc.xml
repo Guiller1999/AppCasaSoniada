@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-land/activity_lista_conectados.xml" value="0.25" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-land/activity_listado_clientes.xml" value="0.13489583333333333" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-land/dato_de_cliente.xml" value="0.13489583333333333" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw600dp-land/activity_lista_conectados.xml" value="0.5" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw600dp-land/dato_de_cliente.xml" value="0.5" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw600dp/activity_lista_conectados.xml" value="0.3828125" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw600dp/activity_listado_clientes.xml" value="0.3828125" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw600dp/dato_de_cliente.xml" value="0.5" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw720dp-land/activity_lista_conectados.xml" value="0.25" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw720dp-land/dato_de_cliente.xml" value="0.24049079754601227" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw720dp-port/activity_listado_clientes.xml" value="0.153125" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw720dp/activity_lista_conectados.xml" value="0.153125" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-sw720dp/dato_de_cliente.xml" value="0.153125" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout/activity_lista_conectados.xml" value="0.22" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout/activity_listado_clientes.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout/dato_de_cliente.xml" value="0.153125" />
+        <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/menu/menu_items.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

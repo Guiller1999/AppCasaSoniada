@@ -2,14 +2,12 @@ package com.example.appcasasoniada.cliente;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -59,10 +57,10 @@ public class ListaCasaAdapter extends RecyclerView.Adapter<ListaCasaAdapter.View
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imagen = itemView.findViewById(R.id.img_casa);
-            txtCasa = itemView.findViewById(R.id.txt_casa);
+            txtCasa = itemView.findViewById(R.id.txt_telefono_c);
             txtHabitaciones = itemView.findViewById(R.id.txt_habitaciones);
             txtArea = itemView.findViewById(R.id.txt_area);
-            btn_proforma = itemView.findViewById(R.id.btn_proforma);
+            btn_proforma = itemView.findViewById(R.id.btn_ver_mas);
 
         }
 

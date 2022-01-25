@@ -1,7 +1,6 @@
 package com.example.appcasasoniada.cliente;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.Group;
 
 import android.content.SharedPreferences;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.appcasasoniada.R;
 import com.example.appcasasoniada.common.BaseActivity;
@@ -33,7 +31,7 @@ public class ProformaActivity extends BaseActivity {
         logueado = datos.getString("usuario_rol", null);
 
         casa = (Casa)getIntent().getSerializableExtra("casa");
-        txtCasa = findViewById(R.id.txt_casa);
+        txtCasa = findViewById(R.id.txt_telefono_c);
         txtHabitaciones = findViewById(R.id.txt_habitaciones);
         txtArea = findViewById(R.id.txt_area);
         imgCasa = findViewById(R.id.img_casa);

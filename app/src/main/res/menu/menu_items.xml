@@ -23,6 +23,23 @@
     </group>
 
     <group
+        android:id="@+id/menu_vendedor"
+        android:visible="false">
+
+        <item
+            android:id="@+id/listado_cliente"
+            android:title="Clientes Conectados"
+            android:icon="@drawable/ic_baseline_person_pin"
+            tools:ignore="DuplicateIds" />
+
+        <item
+            android:id="@+id/salir"
+            android:title="Cerrar sesiòn"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            tools:ignore="DuplicateIds" />
+    </group>
+
+    <group
         android:id="@+id/menu_cliente"
         android:visible="false">
 

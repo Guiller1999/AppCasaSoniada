@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.example.appcasasoniada.MainActivity;
 import com.example.appcasasoniada.R;
+import com.example.appcasasoniada.clientes_conectados.DatosClientes;
+import com.example.appcasasoniada.clientes_conectados.Listado_clientes;
 import com.example.appcasasoniada.modelos.TipoUsuario;
 import com.example.appcasasoniada.modelos.Usuario;
 import com.google.android.material.textfield.TextInputLayout;
@@ -51,9 +53,7 @@ public class LoginActivity extends BaseActivity {
                     editor.putString("usuario_rol", gson.toJson(usuario.getTipoUsuario()));
                     editor.commit();
 
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(intent);
-                    finish();
+                    cargarModuloXUsuario(usuario.getTipoUsuario());
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Error. Credenciales de acceso erróneas", Toast.LENGTH_SHORT).show();
@@ -73,12 +73,11 @@ public class LoginActivity extends BaseActivity {
 
     private void cargarUsuarios() {
         usuarios = new ArrayList<Usuario>();
-
-        usuarios.add(new Usuario(1,"Ángel", "Ortiz Valverde", "angel_ortiz@hotmail.com",
+        usuarios.add(new Usuario(1,"Ángel", "Ortiz Valverde","0912312398" ,"angel_ortiz@hotmail.com",
                 "angel123", TipoUsuario.CLIENTE));
-        usuarios.add(new Usuario(2,"Carolina", "Pérez Arteaga", "carolina_perez@hotmail.com",
+        usuarios.add(new Usuario(2,"Carolina", "Pérez Arteaga", "0912312331","carolina_perez@hotmail.com",
                 "carolina123", TipoUsuario.VENDEDOR));
-        usuarios.add(new Usuario(3,"Carlos", "Rodríguez Peralta", "carlos_2611@hotmail.com",
+        usuarios.add(new Usuario(3,"Carlos", "Rodríguez Peralta", "095345135435","carlos_2611@hotmail.com",
                 "carlos123", TipoUsuario.GERENTE));
     }
 
@@ -90,5 +89,22 @@ public class LoginActivity extends BaseActivity {
         }
 
         return null;
+    }
+
+    private void cargarModuloXUsuario(TipoUsuario tipoUsuario) {
+
+        Intent intent;
+        switch (tipoUsuario) {
+            case CLIENTE:
+                intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case VENDEDOR:
+                intent = new Intent(getApplicationContext(), Listado_clientes.class);
+                startActivity(intent);
+                finish();
+                break;
+        }
     }
 }
