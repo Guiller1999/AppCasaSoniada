@@ -57,19 +57,8 @@
     </group>
 
     <group
-        android:id="@+id/menu_login"
+        android:id="@+id/menu_gerente"
         android:visible="false">
-        <item
-            android:id="@+id/usuario"
-            android:title="Nombre Usuario"
-            android:icon="@drawable/ic_baseline_person_24"
-            />
-        <item
-            tools:ignore="DuplicateIds"
-            android:id="@+id/Acerca"
-            android:title="Acerca de"
-            android:icon="@drawable/ic_baseline_info_24"
-            />
         <item
             android:id="@+id/salir"
             android:title="Cerrar sesiòn"

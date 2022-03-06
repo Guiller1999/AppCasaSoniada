@@ -1,6 +1,8 @@
 package com.example.appcasasoniada;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.appcasasoniada.cliente.ListaCasaAdapter;
@@ -39,6 +41,4 @@ public class MainActivity extends BaseActivity {
                 23000, R.drawable.casa4));
         return lista;
     }
-
-
 }

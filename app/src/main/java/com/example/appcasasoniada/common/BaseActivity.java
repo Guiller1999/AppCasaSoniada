@@ -1,6 +1,5 @@
 package com.example.appcasasoniada.common;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -12,9 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.appcasasoniada.MainActivity;
 import com.example.appcasasoniada.R;
-import com.example.appcasasoniada.clientes_conectados.Listado_clientes;
+import com.example.appcasasoniada.vendedor.Listado_clientes;
 import com.example.appcasasoniada.modelos.TipoUsuario;
-import com.example.appcasasoniada.modelos.Usuario;
 import com.google.gson.Gson;
 
 public class BaseActivity extends AppCompatActivity {
@@ -45,28 +43,31 @@ public class BaseActivity extends AppCompatActivity {
 
         if(usuario == null) {
             menu.setGroupVisible(R.id.menu_nologin, true);
-            menu.setGroupVisible(R.id.menu_login, false);
+            menu.setGroupVisible(R.id.menu_gerente, false);
             menu.setGroupVisible(R.id.menu_cliente, false);
             menu.setGroupVisible(R.id.menu_vendedor, false);
-        }
-        else if(usuario == TipoUsuario.CLIENTE) {
-            menu.setGroupVisible(R.id.menu_cliente, true);
-            menu.setGroupVisible(R.id.menu_nologin, false);
-            menu.setGroupVisible(R.id.menu_login, false);
-            menu.setGroupVisible(R.id.menu_vendedor, false);
+            return true;
         }
 
-        else if(usuario == TipoUsuario.VENDEDOR) {
-            menu.setGroupVisible(R.id.menu_cliente, false);
-            menu.setGroupVisible(R.id.menu_nologin, false);
-            menu.setGroupVisible(R.id.menu_vendedor, true);
-            menu.setGroupVisible(R.id.menu_login, false);
-        }
-        else {
-            menu.setGroupVisible(R.id.menu_login, true);
-            menu.setGroupVisible(R.id.menu_nologin, false);
-            menu.setGroupVisible(R.id.menu_cliente, false);
-            menu.setGroupVisible(R.id.menu_vendedor, false);
+        switch (usuario) {
+            case CLIENTE:
+                menu.setGroupVisible(R.id.menu_cliente, true);
+                menu.setGroupVisible(R.id.menu_nologin, false);
+                menu.setGroupVisible(R.id.menu_gerente, false);
+                menu.setGroupVisible(R.id.menu_vendedor, false);
+                break;
+            case VENDEDOR:
+                menu.setGroupVisible(R.id.menu_cliente, false);
+                menu.setGroupVisible(R.id.menu_nologin, false);
+                menu.setGroupVisible(R.id.menu_vendedor, true);
+                menu.setGroupVisible(R.id.menu_gerente, false);
+                break;
+            case GERENTE:
+                menu.setGroupVisible(R.id.menu_gerente, true);
+                menu.setGroupVisible(R.id.menu_nologin, false);
+                menu.setGroupVisible(R.id.menu_cliente, false);
+                menu.setGroupVisible(R.id.menu_vendedor, false);
+                break;
         }
         return true;
     }
@@ -104,7 +105,5 @@ public class BaseActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-
     }
-
 }

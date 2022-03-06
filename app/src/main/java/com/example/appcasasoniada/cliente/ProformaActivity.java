@@ -49,7 +49,7 @@ public class ProformaActivity extends BaseActivity {
             groupInvisible.setVisibility(View.INVISIBLE);
             groupVisible.setVisibility(View.VISIBLE);
 
-            txtTotal.setText("Total: $" + String.valueOf(casa.getValorBase()));
+            txtTotal.setText("Total: $" + String.format("%.2f", Float.parseFloat(String.valueOf(casa.getValorBase()))));
         }
         else {
             groupInvisible = findViewById(R.id.vista_login);
@@ -61,6 +61,12 @@ public class ProformaActivity extends BaseActivity {
     }
 
     public void onCheckboxClicked(@NonNull View view) {
+
+        if(logueado != null)
+            agregarCaracteristicas(view);
+    }
+
+    private void agregarCaracteristicas(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox)view).isChecked();
         String total = txtTotal.getText().toString();
@@ -70,21 +76,21 @@ public class ProformaActivity extends BaseActivity {
         switch(view.getId()) {
             case R.id.piso_marmol:
                 if (checked)
-                    txtTotal.setText("Total: $" + (totalBase + 500.00));
+                    txtTotal.setText("Total: $" + String.format("%.2f", Float.parseFloat(String.valueOf(totalBase + 500.00))));
                 else
-                    txtTotal.setText("Total: $" + (totalBase - 500.00));
+                    txtTotal.setText("Total: $" + String.format("%.2f", Float.parseFloat(String.valueOf(totalBase - 500.00))));
                 break;
             case R.id.griferia_italiana:
                 if (checked)
-                    txtTotal.setText("Total: $" + (totalBase + 500.00));
+                    txtTotal.setText("Total: $" + String.format("%.2f", Float.parseFloat(String.valueOf(totalBase + 500.00))));
                 else
-                    txtTotal.setText("Total: $" + (totalBase - 500.00));
+                    txtTotal.setText("Total: $" + String.format("%.2f", Float.parseFloat(String.valueOf(totalBase - 500.00))));
                 break;
             case R.id.puerta:
                 if (checked)
-                    txtTotal.setText("Total: $" + (totalBase + 1500.00));
+                    txtTotal.setText("Total: $" + String.format("%.2f", Float.parseFloat(String.valueOf(totalBase + 1500.00))));
                 else
-                    txtTotal.setText("Total: $" + (totalBase - 1500.00));
+                    txtTotal.setText("Total: $" + String.format("%.2f", Float.parseFloat(String.valueOf(totalBase - 1500.00))));
                 break;
         }
     }

@@ -1,4 +1,4 @@
-package com.example.appcasasoniada.clientes_conectados;
+package com.example.appcasasoniada.vendedor;
 
 import android.content.Intent;
 import android.os.Bundle;

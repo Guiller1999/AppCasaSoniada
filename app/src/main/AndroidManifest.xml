@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.appcasasoniada">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCasaSoniada">
         <activity
-            android:name=".clientes_conectados.Listado_clientes"
+            android:name=".GerenteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vendedor.Listado_clientes"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
@@ -32,7 +37,7 @@
             android:name=".common.RegistroActivity"
             android:exported="false" />
         <activity
-            android:name=".clientes_conectados.DatosClientes"
+            android:name=".vendedor.DatosClientes"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

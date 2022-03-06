@@ -3,6 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/drawable/rounded_button.xml" value="0.13914473684210527" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/drawable/rounded_button_gold.xml" value="0.13914473684210527" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-land/activity_gerente.xml" value="0.21" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-land/activity_lista_conectados.xml" value="0.1254125412541254" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-land/activity_main.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-land/dato_de_cliente.xml" value="0.18388157894736842" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-land/lista_casas.xml" value="0.25" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp-land/activity_gerente.xml" value="0.5" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp-land/activity_lista_conectados.xml" value="0.18181818181818182" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp-land/dato_de_cliente.xml" value="0.43671875" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp-land/lista_casas.xml" value="0.5" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp-land/lista_interesados.xml" value="0.26015625" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp/activity_gerente.xml" value="0.30625" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp/activity_lista_conectados.xml" value="0.30625" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.30625" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp/dato_de_cliente.xml" value="0.30625" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp/lista_casas.xml" value="0.5" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw600dp/lista_interesados.xml" value="0.5" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw720dp-land/activity_lista_conectados.xml" value="0.2289156626506024" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw720dp-land/dato_de_cliente.xml" value="0.2503192848020434" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw720dp/activity_lista_conectados.xml" value="0.19140625" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout-sw720dp/dato_de_cliente.xml" value="0.19140625" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/activity_gerente.xml" value="0.25" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/activity_lista_conectados.xml" value="0.25" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/activity_proforma.xml" value="0.12894736842105264" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/activity_registro.xml" value="0.18" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/activity_splash_screen.xml" value="0.18" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/dato_de_cliente.xml" value="0.25" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/lista_casas.xml" value="0.12894736842105264" />
+        <entry key="..\:/Users/LNV/Desktop/proyecto_android/app/src/main/res/layout/lista_interesados.xml" value="0.25" />
         <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-land/activity_lista_conectados.xml" value="0.25" />
         <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-land/activity_listado_clientes.xml" value="0.13489583333333333" />
         <entry key="..\:/Users/LNV/Desktop/ptoyecto/proyecto_android/app/src/main/res/layout-land/dato_de_cliente.xml" value="0.13489583333333333" />

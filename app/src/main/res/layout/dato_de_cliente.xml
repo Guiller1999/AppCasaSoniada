@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".clientes_conectados.DatosClientes"
+    tools:context=".vendedor.DatosClientes"
     android:background="@color/fondo_palido"
     >
     <LinearLayout
@@ -137,7 +137,7 @@
                 android:text="Telefono" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/txt_telefono"
                 style="@style/description_cardview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -232,6 +232,20 @@
                 android:layout_weight="1"
                 android:text="13/01/2022 15:43" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_llamar"
+            style="@style/rounded_button_gold"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="LLamar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btn_regresar"

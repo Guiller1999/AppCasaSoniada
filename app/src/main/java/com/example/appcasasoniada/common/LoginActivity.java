@@ -1,7 +1,5 @@
 package com.example.appcasasoniada.common;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,10 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.appcasasoniada.GerenteActivity;
 import com.example.appcasasoniada.MainActivity;
 import com.example.appcasasoniada.R;
-import com.example.appcasasoniada.clientes_conectados.DatosClientes;
-import com.example.appcasasoniada.clientes_conectados.Listado_clientes;
+import com.example.appcasasoniada.vendedor.Listado_clientes;
 import com.example.appcasasoniada.modelos.TipoUsuario;
 import com.example.appcasasoniada.modelos.Usuario;
 import com.google.android.material.textfield.TextInputLayout;
@@ -102,6 +100,11 @@ public class LoginActivity extends BaseActivity {
                 break;
             case VENDEDOR:
                 intent = new Intent(getApplicationContext(), Listado_clientes.class);
+                startActivity(intent);
+                finish();
+                break;
+            case GERENTE:
+                intent = new Intent(getApplicationContext(), GerenteActivity.class);
                 startActivity(intent);
                 finish();
                 break;

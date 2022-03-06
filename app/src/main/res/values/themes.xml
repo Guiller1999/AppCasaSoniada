@@ -31,6 +31,11 @@
         <item name="android:textColor">@color/gold</item>
     </style>
 
+    <style name="rounded_button_gold">
+        <item name="android:background">@drawable/rounded_button_gold</item>
+        <item name="android:textColor">@color/black_20</item>
+    </style>
+
     <style name="title_card_description">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/dark_blue</item>
