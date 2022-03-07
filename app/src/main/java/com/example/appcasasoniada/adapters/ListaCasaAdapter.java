@@ -1,4 +1,4 @@
-package com.example.appcasasoniada.cliente;
+package com.example.appcasasoniada.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.appcasasoniada.R;
+import com.example.appcasasoniada.cliente.ProformaActivity;
 import com.example.appcasasoniada.modelos.Casa;
 
 import java.util.ArrayList;

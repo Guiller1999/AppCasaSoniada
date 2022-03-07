@@ -10,10 +10,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.appcasasoniada.gerente.GerenteActivity;
 import com.example.appcasasoniada.modelos.TipoUsuario;
-import com.example.appcasasoniada.modelos.Usuario;
 import com.example.appcasasoniada.vendedor.Listado_clientes;
 import com.google.gson.Gson;
 

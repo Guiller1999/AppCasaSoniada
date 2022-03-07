@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.appcasasoniada.GerenteActivity;
+import com.example.appcasasoniada.gerente.GerenteActivity;
 import com.example.appcasasoniada.MainActivity;
 import com.example.appcasasoniada.R;
 import com.example.appcasasoniada.vendedor.Listado_clientes;

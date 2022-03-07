@@ -1,15 +1,13 @@
-package com.example.appcasasoniada;
+package com.example.appcasasoniada.gerente;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.appcasasoniada.cliente.ListaCasaAdapter;
+import com.example.appcasasoniada.R;
 import com.example.appcasasoniada.common.BaseActivity;
-import com.example.appcasasoniada.gerente.ListaInteresadosAdapter;
-import com.example.appcasasoniada.modelos.Casa;
+import com.example.appcasasoniada.adapters.ListaInteresadosAdapter;
 import com.example.appcasasoniada.modelos.Proforma;
 
 import java.time.LocalDateTime;

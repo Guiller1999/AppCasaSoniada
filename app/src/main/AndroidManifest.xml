@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCasaSoniada">
         <activity
-            android:name=".GerenteActivity"
+            android:name=".gerente.GerenteActivity"
             android:exported="false" />
         <activity
             android:name=".vendedor.Listado_clientes"

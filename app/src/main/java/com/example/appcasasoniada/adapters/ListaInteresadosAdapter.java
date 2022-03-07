@@ -1,23 +1,16 @@
-package com.example.appcasasoniada.gerente;
+package com.example.appcasasoniada.adapters;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.appcasasoniada.R;
-import com.example.appcasasoniada.cliente.ProformaActivity;
-import com.example.appcasasoniada.modelos.Casa;
 import com.example.appcasasoniada.modelos.Proforma;
-
-import org.w3c.dom.Text;
 
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
